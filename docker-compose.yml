@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: event-hub-db
+    environment:
+      POSTGRES_DB: event_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5432:5432"
